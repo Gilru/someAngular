@@ -100,7 +100,7 @@ angular.directive("country", function () {
             $scope.flagURL = "";
 
            console.log($scope.country.id)
-            countries.find( , function (country) {
+            countries.find($scope.country.id, function (country) {
                 $scope.flagURL = country.flagURL
 
             })
