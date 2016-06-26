@@ -1,0 +1,6 @@
+<h1>Super {{name}}</h1>
+<ul>
+
+    <li>name: {{country.name}}, capital {{country.capital}}, <img ng-src="{{country.flagURL}}" alt="" width="400"></li>
+    <li ng-repeat="country in countries">gpdp: {{country.gdp |number }}</li>
+</ul>
